@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Aliza Forgiveness To Azhar</title>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#050003">
+  <meta property="og:title" content="Crystal Heart Animation">
+  <meta property="og:description" content="A luxury interactive 3D Crystal Heart experience.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="https://use.typekit.net/trt3ngp.css">
+  <link rel="stylesheet" href="./style.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.135.0/build/three.module.js",
+        "three/examples/": "https://unpkg.com/three@0.135.0/examples/",
+        "gsap": "https://cdn.skypack.dev/gsap@3.8.0"
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+  <div id="preloader">
+    <div class="preloader-text">Crafting Experience...</div>
+  </div>
+
+  <canvas class="webgl"></canvas>
+  <div id="mini-hearts-container"
+    style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: 50; overflow: hidden;">
+  </div>
+  <h1 class="h1text">
+    <span>DR. SYEDA ALIZA</span>
+    <span class="heart-icon">❤️</span>
+    <span>ER. MOHAMMAD AZHAR</span>
+  </h1>
+
+
+  <script type="module" src="./script.js"></script>
+</body>
+
+
+</html>

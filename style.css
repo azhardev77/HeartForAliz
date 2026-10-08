@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Great+Vibes&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow: hidden;
+  background: #16000a;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  touch-action: none;
+}
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #050003;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preloader-text {
+  font-family: "Cinzel Decorative", serif;
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  letter-spacing: 3px;
+  color: #ff69b4;
+  text-transform: uppercase;
+  animation: pulse-glow 2s infinite ease-in-out;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.5;
+    text-shadow: 0 0 10px rgba(255, 105, 180, 0.2);
+  }
+  50% {
+    opacity: 1;
+    text-shadow: 0 0 20px rgba(255, 105, 180, 0.8), 0 0 30px rgba(255, 182, 193, 0.6);
+  }
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  color: #ffdada;
+  background: radial-gradient(circle at center, #2e0817 0%, #12020a 60%, #050003 100%);
+}
+
+.h1text {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 700;
+  font-size: clamp(1rem, 3.5vw, 2.2rem);
+  letter-spacing: 2px;
+  color: #fff0f5;
+  text-shadow: 0 0 10px rgba(255, 105, 180, 0.6), 0 0 20px rgba(255, 182, 193, 0.4);
+  z-index: 20;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding: 0 16px;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.heart-icon {
+  margin: 0 14px;
+  animation: pulse 2s infinite;
+  text-shadow: 0 0 10px rgba(255, 105, 180, 0.8), 0 0 20px rgba(255, 182, 193, 0.6);
+  color: #ff69b4;
+}
+
+.h1text span {
+  display: inline-block;
+}
+
+.webgl {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  outline: none;
+  pointer-events: auto;
+}
+
+
+
+h1 {
+  position: absolute;
+  top: 12vh;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  padding: 0 1rem;
+  opacity: 0;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(circle at center, transparent 40%, rgba(10, 0, 5, 0.85) 100%);
+  pointer-events: none;
+  z-index: 5;
+}
